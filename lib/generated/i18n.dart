@@ -13,7 +13,7 @@ class S extends WidgetsLocalizations {
   }
 
   static final GeneratedLocalizationsDelegate delegate =
-  new GeneratedLocalizationsDelegate();
+      new GeneratedLocalizationsDelegate();
 
   static S of(BuildContext context) {
     var s = Localizations.of<S>(context, WidgetsLocalizations);
@@ -29,7 +29,6 @@ class S extends WidgetsLocalizations {
 class en extends S {
   en(Locale locale) : super(locale);
 }
-
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<WidgetsLocalizations> {
   const GeneratedLocalizationsDelegate();
 
@@ -68,7 +67,6 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<WidgetsLocali
   bool shouldReload(GeneratedLocalizationsDelegate old) => false;
 }
 
-String getLang(Locale l) =>
-    l.countryCode != null && l.countryCode.isEmpty
-        ? l.languageCode
-        : l.toString();
+String getLang(Locale l) => l.countryCode != null && l.countryCode.isEmpty
+    ? l.languageCode
+    : l.toString();

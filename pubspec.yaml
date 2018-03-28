@@ -1,7 +1,8 @@
-name: wexiao
-description: 为我们微笑
+name: islove
+description: 今天与你一切是爱
 
 dependencies:
+  shared_preferences:
   flutter:
     sdk: flutter
 
@@ -29,6 +30,12 @@ flutter:
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
+  assets:
+    - assets/banner/banner.png
+    - assets/banner/3.0/banner.png
+    - assets/slides/1.png
+    - assets/slides/2.png
+    - assets/slides/3.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

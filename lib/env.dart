@@ -16,10 +16,6 @@ class Env {
   static get mode {
     return _mode;
   }
+}
 
-}
-enum EnvMode {
-  Dev,
-  Test,
-  Prod
-}
+enum EnvMode { Dev, Test, Prod }
