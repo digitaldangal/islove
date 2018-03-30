@@ -1,19 +1,19 @@
 class Env {
-  static final _mode = EnvMode.Dev;
+  final _mode = EnvMode.Dev;
 
-  static get dev {
+  get dev {
     return _mode == EnvMode.Dev;
   }
 
-  static get prod {
+  get prod {
     return _mode == EnvMode.Prod;
   }
 
-  static get test {
+  get test {
     return _mode == EnvMode.Test;
   }
 
-  static get mode {
+  get mode {
     return _mode;
   }
 }

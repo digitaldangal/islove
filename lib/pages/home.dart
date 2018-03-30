@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:islove/api/apiv1.dart';
+import 'package:islove/styles.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title = "是爱"}) : super(key: key);
@@ -99,7 +100,7 @@ class _HomePageState extends State<HomePage> {
       body = new ListView.builder(
         controller: scrollCtr,
         primary: false,
-        padding: const EdgeInsets.fromLTRB(2.0, 16.0, 2.0, 8.0),
+        padding: const EdgeInsets.fromLTRB(0.0, 16.0, 0.0, 8.0),
         itemCount: _data.flashes.length,
         itemExtent: 128.0,
         itemBuilder: (BuildContext context, int index) {
@@ -142,7 +143,7 @@ class _HomePageState extends State<HomePage> {
           new PreferredSize(
         child: new Material(
           //rgb(254, 98, 89)
-          color: const Color.fromARGB(255, 254, 98, 89), // 匹配 banner 色
+          color: Styles.bannerColor, // 匹配 banner 色
           elevation: 6.0,
           child: new SafeArea(
             top: true,

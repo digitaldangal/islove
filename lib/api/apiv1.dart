@@ -11,7 +11,7 @@ class ApiV1 {
 
   DataV1 _data;
 
-  var url = 'https://xx.wener.me/v1';
+  var url = 'https://islove.wener.me/v1';
   var httpClient = new HttpClient();
 
   DataV1 getDataNow() {

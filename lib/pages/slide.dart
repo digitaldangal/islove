@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:islove/styles.dart';
 
 class SlidePage extends StatefulWidget {
   @override
@@ -14,10 +14,8 @@ const _slidesAssets = <String>[
   'assets/slides/3.png',
 ];
 
-
 class _SlidePageState extends State<SlidePage> with SingleTickerProviderStateMixin {
   TabController _tabController;
-
 
   @override
   void initState() {
@@ -37,8 +35,14 @@ class _SlidePageState extends State<SlidePage> with SingleTickerProviderStateMix
       child: new TabBarView(
         controller: _tabController,
         children: <Widget>[
-          Image.asset('assets/slides/1.png', fit: BoxFit.cover,),
-          Image.asset('assets/slides/2.png', fit: BoxFit.cover,),
+          Image.asset(
+            'assets/slides/1.png',
+            fit: BoxFit.cover,
+          ),
+          Image.asset(
+            'assets/slides/2.png',
+            fit: BoxFit.cover,
+          ),
           Container(
             constraints: new BoxConstraints.expand(
               height: 200.0,
@@ -49,14 +53,17 @@ class _SlidePageState extends State<SlidePage> with SingleTickerProviderStateMix
               onPressed: () {
                 Navigator.of(context).pushReplacementNamed('/home');
               },
-              child: const Text(""),
+              child: const Text(
+                "是爱",
+                style: const TextStyle(color: Colors.white),
+              ),
+              color: Styles.bannerColor,
             ),
             decoration: new BoxDecoration(
                 image: new DecorationImage(
-                  image: const AssetImage('assets/slides/3.png'),
-                  fit: BoxFit.cover,
-                )
-            ),
+              image: const AssetImage('assets/slides/3.png'),
+              fit: BoxFit.cover,
+            )),
           )
         ],
       ),
