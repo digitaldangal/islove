@@ -4,6 +4,8 @@
 
 Read in | [中文](./README.zh-CN.md) | [English](./README.md)
 
+![](./doc/preview.gif)
+
 ## Getting Started
 
 ```bash

@@ -4,6 +4,7 @@
 
 其他语言 | [中文](./README.zh-CN.md) | [English](./README.md)
 
+![](./doc/preview.gif)
 
 ## 开始
 
