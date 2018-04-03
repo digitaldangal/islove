@@ -8,6 +8,8 @@ Read in | [中文](./README.zh-CN.md) | [English](./README.md)
 
 ## Getting Started
 
+Based on [flutter.io](https://flutter.io/) , for more detail please check official [document](https://flutter.io/docs/).
+
 ```bash
 # Run on you device or simulator
 flutter run

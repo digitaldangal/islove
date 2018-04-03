@@ -8,6 +8,8 @@
 
 ## 开始
 
+应用基于 [flutter.io](https://flutter.io/) 开发, 更多细节请查看[官方文档](https://flutter.io/docs/). 
+
 ```bash
 # 在虚拟机或设备上允许
 flutter run
