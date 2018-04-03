@@ -1,8 +1,12 @@
-# wexiao
+# IsLove
 
-Smiling for us.
+> Love for you and me, you and me, for love
+
+Read in | [中文](./README.zh-CN.md) | [English](./README.md)
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+```bash
+# Run on you device or simulator
+flutter run
+```
