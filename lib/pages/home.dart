@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
   @override
   initState() {
     super.initState();
-    print("Loading data");
     _load();
   }
 
@@ -121,6 +120,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       fit: BoxFit.cover,
                       alignment: Alignment.topCenter,
+                      gaplessPlayback: true,
                     ),
                   ),
                 ),

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart' show timeDilation;
-import 'package:islove/api/apiv1.dart';
 import 'package:islove/pages/flash.dart';
 import 'package:islove/pages/home.dart';
 import 'package:islove/pages/slide.dart';
 
-void main() => runApp(new WeXiaoApp());
+void main() {
+  runApp(new WeXiaoApp());
+}
 
 class WeXiaoApp extends StatelessWidget {
   // This widget is the root of your application.

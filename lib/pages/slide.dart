@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:islove/styles.dart';
 
 class SlidePage extends StatefulWidget {
@@ -20,6 +21,9 @@ class _SlidePageState extends State<SlidePage> with SingleTickerProviderStateMix
   @override
   void initState() {
     super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     _tabController = new TabController(vsync: this, length: 3);
   }
 
@@ -31,6 +35,10 @@ class _SlidePageState extends State<SlidePage> with SingleTickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
+    // Preload images
+    var localImageConfiguration = createLocalImageConfiguration(context);
+    new AssetImage('assets/slides/2.png').resolve(localImageConfiguration);
+    new AssetImage('assets/slides/3.png').resolve(localImageConfiguration);
     return Container(
       child: new TabBarView(
         controller: _tabController,
@@ -38,19 +46,23 @@ class _SlidePageState extends State<SlidePage> with SingleTickerProviderStateMix
           Image.asset(
             'assets/slides/1.png',
             fit: BoxFit.cover,
+            gaplessPlayback: true,
           ),
           Image.asset(
             'assets/slides/2.png',
             fit: BoxFit.cover,
+            gaplessPlayback: true,
           ),
           Container(
             constraints: new BoxConstraints.expand(
               height: 200.0,
             ),
             alignment: Alignment.bottomCenter,
-            padding: const EdgeInsets.only(bottom: 52.0),
+            padding: const EdgeInsets.only(bottom: 24.0),
             child: new FlatButton(
               onPressed: () {
+                // Restore default
+                SystemChrome.setPreferredOrientations([]);
                 Navigator.of(context).pushReplacementNamed('/home');
               },
               child: const Text(
